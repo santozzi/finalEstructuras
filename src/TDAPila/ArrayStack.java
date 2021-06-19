@@ -63,5 +63,25 @@ public class ArrayStack<E> implements Stack<E> {
 		size--;
 		return element;
 	}
+	/**
+	 * Punto 4 del práctico 3
+	 * ----------------------
+	 * T(n) invertir() = n/2 = O(n)
+	*/
+	public void invertir() {
+		for(int i = 0; i<size/2;i++) {
+			E aux= contenedor[size-1-i];
+			contenedor[size-1-i]= contenedor[i];
+			contenedor[i]= aux;
+		}
+	}
+	
+	public String toString() {
+		String aRetornar = "";
+		for(int i=size-1;i>=0;i--) {
+			aRetornar +=contenedor[i]+" ";
+		}
+		return aRetornar;
+	}
 
 }

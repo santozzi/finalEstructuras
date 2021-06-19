@@ -19,7 +19,7 @@ public class StackTest {
 
 	private Stack<String> getStack()
 	{
-	  return new ArrayStack<String>();
+	  return new LinkedStack<String>();
 	  
 	 }
 	
