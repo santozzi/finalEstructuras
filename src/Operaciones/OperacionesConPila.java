@@ -4,7 +4,11 @@ package Operaciones;
 import TDAPila.ArrayStack;
 import TDAPila.Stack;
 import TDAPila.EmptyStackException;
-
+/**
+ * 
+ * @author Sergio Antozzi
+ *
+ */
 public class OperacionesConPila {
 	/**
 	 * Permite invertir el contenido del arreglo (a) 
